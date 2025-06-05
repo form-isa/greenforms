@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>オンライン説明会お申し込み</title>
+  <title>〇〇高等学校　マルタ研修</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
@@ -32,21 +32,23 @@
     .button {
       display: inline-block;
       width: 90%;
-      max-width: 300px;
+      max-width: 320px;
       margin: 12px auto;
       padding: 16px;
       font-size: 18px;
       font-weight: bold;
-      background-color: #28a745; /* 緑 */
+      background-color: #28a745;
       color: white;
       text-decoration: none;
       border-radius: 10px;
       transition: background-color 0.3s ease;
       box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+      white-space: normal;
+      line-height: 1.4;
     }
 
     .button:hover {
-      background-color: #1e7e34; /* 濃い緑 */
+      background-color: #1e7e34;
     }
 
     .note {
@@ -62,7 +64,7 @@
       }
 
       h1::after {
-        content: "\Aお申し込み";
+        content: "\A";
         white-space: pre;
       }
 
@@ -75,19 +77,21 @@
 </head>
 <body>
   <div class="container">
-    <h1>オンライン説明会</h1>
+    <h1>〇〇高等学校　マルタ研修</h1>
 
     <!-- GoogleフォームのURLに変更してください -->
     <a class="button" href="https://docs.google.com/forms/d/e/FORM_ID_1/viewform" target="_blank">
-      午前の部に申し込む
+      説明会に申し込む<br>
+      日時：11月2日(土) 10時～（1時間程度）<br>
+      締切：10月30日(木)
     </a>
     <a class="button" href="https://docs.google.com/forms/d/e/FORM_ID_2/viewform" target="_blank">
-      午後の部に申し込む
+      研修に申し込む<br>
+      締切：11月15日(金)
     </a>
 
     <p class="note">
-      ※ それぞれの時間帯で内容は同じです。
-      ご都合の良い時間をお選びください。
+      ※ それぞれの内容は異なりますので、どちらもご確認の上、お申し込みください。
     </p>
   </div>
 </body>
