@@ -26,13 +26,20 @@
       font-size: 28px;
       line-height: 1.4;
     }
+    h2 {
+      color: #444;
+      margin: 32px 0 16px 0;
+      font-size: 20px;
+      border-bottom: 2px solid #28a745;
+      padding-bottom: 8px;
+    }
     .button {
       display: inline-block;
       width: 90%;
       max-width: 320px;
       margin: 12px auto;
       padding: 16px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       background-color: #28a745;
       color: white;
@@ -46,6 +53,15 @@
     .button:hover {
       background-color: #1e7e34;
     }
+    .button.main-application {
+      background-color: #dc3545;
+      box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2);
+      font-size: 18px;
+      margin-top: 24px;
+    }
+    .button.main-application:hover {
+      background-color: #c82333;
+    }
     .note {
       margin-top: 20px;
       font-size: 14px;
@@ -56,13 +72,14 @@
       h1 {
         font-size: 22px;
       }
-      h1::after {
-        content: "\A";
-        white-space: pre;
+      h2 {
+        font-size: 18px;
       }
-      .note::after {
-        content: "\A";
-        white-space: pre;
+      .button {
+        font-size: 14px;
+      }
+      .button.main-application {
+        font-size: 16px;
       }
     }
   </style>
@@ -70,16 +87,25 @@
 <body>
   <div class="container">
     <h1>第２回マルタ研修</h1>
-    <!-- GoogleフォームのURLに変更してください -->
-    <a class="button" href="https://docs.google.com/forms/d/e/FORM_ID_1/viewform" target="_blank">
-      説明会に申し込む<br>
-      日時：11月2日(土)&nbsp;10:00～<br>（1時間程度）<br>
-      締切：10月30日(木)
+    
+    <h2>説明会のお申し込み</h2>
+    
+    <div class="button" style="cursor: default;">
+      和泉高校<br>
+      9月25日(木) 15時30分～<br>
+      （1時間程度）<br>
+      場所：和泉高校<br>
+      締切：10月12日(日)
+    </div>
+    
+    <a class="button main-application" href="https://www.secure-cloud.jp/sf/business/1753326385CZDusIlx" target="_blank">
+      オンライン説明会に申し込む
     </a>
-    <a class="button" href="https://docs.google.com/forms/d/e/FORM_ID_2/viewform" target="_blank">
-      研修に申し込む<br>
-      締切：11月15日(金)
+    
+    <a class="button main-application" href="https://www.secure-cloud.jp/sf/business/1753407170LwFQiqdG" target="_blank">
+      研修に申し込む
     </a>
+    
     <p class="note">
       可能な限りPCドメインのメールアドレスで登録をお願いします。
     </p>
